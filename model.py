@@ -315,8 +315,8 @@ def get_caption_model():
     caption_model.decoder(sample_y, sample_enc_out, training=False)
 
     try:
-        caption_model.load_weights('models/trained_coco_weights.h5')
+        caption_model.load_weights('models/trained_coco_weights_2.h5')
     except FileNotFoundError:
-        caption_model.load_weights('image-caption-generator/models/trained_coco_weights.h5')
+        caption_model.load_weights('image-caption-generator/models/trained_coco_weights_2.h5')
 
     return caption_model
