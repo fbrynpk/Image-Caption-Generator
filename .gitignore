@@ -3,3 +3,4 @@ coco2017/
 .DS_Store
 *.ipynb
 wget-log
+__pycache__
